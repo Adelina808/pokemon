@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+            }
+            .list {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 5px;
+            }
+            .item {
+                list-style: none;
+                border: 1px solid;
+                padding: 15px 20px;
+                text-align: center;
+                background: rgb(251 249 249);
+            }
+            .item2 {
+                list-style: none;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .item:hover {
+                background: rgba(229, 32, 32, 0.765);
+            }
+            .hero {
+                display: flex;
+            }
+            .info {
+                width: 350px;
+                height: 500px;
+                border: 1px solid;
+            }
+            .infos {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+            .info {
+                background: rgb(251 249 249);
+            }
+            .btns {
+                display: flex;
+                justify-content: space-between;
+            }
+            .btn {
+                background: #e74c3c;
+                padding: 8px 20px;
+                border: none;
+                color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="hero">
+                <ul class="info">
+                    <!-- <img src="" alt="">
+                <div class="info">
+                    <span class="name">Name</span>
+                    <span class="weigth">weigth</span>
+                    <span class="heigth">he</span>
+                </div> -->
+                <h1></h1>
+                </ul>
+                <ul class="list"></ul>
+            </div>
+            <div class="btns">
+                <button class="btn prev">>Prev</button>
+                <button class="btn next">Next></button>
+            </div>
+        </div>
+        <script src="./main.js" type="module"></script>
+    </body>
+</html>
